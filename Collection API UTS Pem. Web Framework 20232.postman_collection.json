@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "6b10bd62-68e6-4ace-a300-1adc8546e5d3",
+		"_postman_id": "5c83f2d0-41a0-426d-a911-630efefc96d0",
 		"name": "Collection API UTS Pem. Web Framework 20232",
 		"description": "Collection ini digunakan mahasiswa untuk testing API yang akan mahasiswa buat untuk pengerjaan soal UTS (**jangan di otak-atik field body nya**).\n\nKami sebagai dosen pengampu matakuliah akan menggunakan collection API ini untuk memudahkan proses penilaian, sehingga mahasiswa bisa mengetahui berapa nilai UTS yang didapat hanya dengan melakukan pemeriksaan kesesuaian antara API yang dibuat dengan request-response dari collection API ini. Untuk memudahkan penggunaaan collection API serta **SYARAT NILAI** ini ikuti aturan-aturan berikut:\n\n1. **WAJIB HOSTING**, berbayar atau tidak dipersilahkan asalkan pada saat penilaian API dapat berjalan dengan baik. Kegagalan request-response API karena permasalahan hosting diluar tanggung jawab dosen pengampu dan sudah dipastikan dapat nilai 0.\n    \n2. **WAJIB DOMAIN**, boleh menggunakan sub-domain sehingga bisa membeli domain secara kolektif.\n    \n3. Pada collection terdapat beberapa simbol seperti berikut, **yang mana simbol ini harus mahasiswa ganti sesuai dengan API yang mahasiswa buat**:\n    \n    1. **{{baseUrl}}** : nama domain boleh menggunakan http atau https\n        \n    2. **{{jwtToken}}** : token JWT untuk otentikasi dan otorisasi (segmentasi role admin dan user)\n        \n    3. **{{id}}** : id untuk melakukan edit ataupun delete, id: 1, 2, 3, dst\n        \n    4. \"isi kan bla bla bla\" : isi kan inputan sesuai dengan seharusnya (boleh dimodifikasi inputannya untuk cek validasi inputan)\n        \n4. **WAJIB GUNAKAN VALIDASI INPUTAN**\n    \n5. **WAJIB LARAVEL**\n    \n\n**Apa yang harus saya penuhi untuk dapat nilai UTS?**\n\n1. Pengumpulan dan presensi wajib di BOC (ketentuan fakultas tidak bisa kompromi)\n    \n2. Tidak melanggar aturan-aturan diatas\n    \n3. Pengumpulan UTS berupa **link source code project UTS di github/gitlab/bitbucket (public bukan hasil kompresi seperti zip/rar), dan alamat domain**\n    \n4. Melebihi batas waktu pengumpulan dianggap tidak mengikuti UTS\n    \n\n> Merugilah dia yang mencontek dan/atau memberi contekan kepada orang lain. Karena sesungguhnya dia telah membodohi dirinya sendiri serta orang lain.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
@@ -155,13 +155,17 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{jwtToken}}"
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoxfX0.uwOlhWJAHo2cj2OVql51nWfMTbSvMTjXNI0jEJOxV7o"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/products",
+							"raw": "https://uts-amirsyahrulramadhan-1098.freshs.my.id/api/products",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
+								"uts-amirsyahrulramadhan-1098",
+								"freshs",
+								"my",
+								"id"
 							],
 							"path": [
 								"api",
@@ -179,7 +183,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{jwtToken}}"
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoxfX0.uwOlhWJAHo2cj2OVql51nWfMTbSvMTjXNI0jEJOxV7o"
 							}
 						],
 						"body": {
@@ -219,9 +223,13 @@
 							]
 						},
 						"url": {
-							"raw": "{{baseUrl}}/api/products",
+							"raw": "https://uts-amirsyahrulramadhan-1098.freshs.my.id/api/products",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
+								"uts-amirsyahrulramadhan-1098",
+								"freshs",
+								"my",
+								"id"
 							],
 							"path": [
 								"api",
@@ -239,7 +247,7 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{jwtToken}}"
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoxfX0.uwOlhWJAHo2cj2OVql51nWfMTbSvMTjXNI0jEJOxV7o"
 							},
 							{
 								"key": "Request-Method",
@@ -283,9 +291,13 @@
 							]
 						},
 						"url": {
-							"raw": "{{baseUrl}}/api/products/186?_method=put",
+							"raw": "https://uts-amirsyahrulramadhan-1098.freshs.my.id/api/products/186?_method=put",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
+								"uts-amirsyahrulramadhan-1098",
+								"freshs",
+								"my",
+								"id"
 							],
 							"path": [
 								"api",
@@ -310,18 +322,21 @@
 						"header": [
 							{
 								"key": "Authorization",
-								"value": "{{jwtToken}}"
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjp7ImlkIjoxfX0.uwOlhWJAHo2cj2OVql51nWfMTbSvMTjXNI0jEJOxV7o"
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/api/products/186",
+							"raw": "https://uts-amirsyahrulramadhan-1098.freshs.my.id/api/products",
+							"protocol": "https",
 							"host": [
-								"{{baseUrl}}"
+								"uts-amirsyahrulramadhan-1098",
+								"freshs",
+								"my",
+								"id"
 							],
 							"path": [
 								"api",
-								"products",
-								"186"
+								"products"
 							]
 						},
 						"description": "menghapus data produk dengan id yang dipilih"
